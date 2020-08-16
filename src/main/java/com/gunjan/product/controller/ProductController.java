@@ -32,7 +32,7 @@ public class ProductController {
 	}
 
 	@GetMapping("/users/productList/costlyProducts/{price}")
-	public List<Product> getAllProductsBasedOnPrice( @PathVariable double price) {
+	public List<Product> getAllProductsCostlierThanGivenPrice(@PathVariable double price) {
 
 		return productService.priceGreaterThanMentioned(price);
 	}

@@ -10,8 +10,8 @@ import org.springframework.data.annotation.Id;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
-public class Product implements Comparable<Product> {
+@Document(collection = "product")
+public class Product{
 
 	@Id
 	private String productId;
@@ -75,15 +75,6 @@ public class Product implements Comparable<Product> {
 		return "Product [productId=" + productId + ", name=" + name + ", category=" + category + ", price=" + price
 				+ ", availability=" + availability + ", quantity=" + quantity + "]";
 	}
-	@Override
-	public int compareTo(Product o) {
-		
-			  if(this.getPrice() - o.getPrice() < 0)
-				  return -1;
-			  else if(this.getPrice() - o.getPrice() > 0)
-				  return 1;
-			  else
-				  return 0;
-	}
+	
 	
 }
