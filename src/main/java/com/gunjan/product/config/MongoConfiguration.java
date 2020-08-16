@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //package com.gunjan.product.config;
 //import org.springframework.beans.factory.annotation.Value;
 //import org.springframework.context.annotation.Configuration;
@@ -24,7 +23,6 @@
 //	    }
 //}
 //
-=======
 // package com.gunjan.product.config;
 // import org.springframework.beans.factory.annotation.Value;
 // import org.springframework.context.annotation.Configuration;
@@ -49,5 +47,3 @@
 // 	        return databaseName;
 // 	    }
 // }
-
->>>>>>> ffbd3d3b1e95ca1b135986934206cc6d25eb7d50
